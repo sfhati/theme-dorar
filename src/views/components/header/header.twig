@@ -6,6 +6,13 @@
 | cart.total       | string  | Formatted total ex: "١٠٠ ر.س"   |
 #}
 <style>
+:root {
+    --font-main: 'PingARLT' !important;
+    --color-primary: #0b3923 !important;
+    --color-primary-dark: #062312 !important;
+    --color-primary-light: #0c3b23 !important;
+    --color-primary-reverse: #b08046 !important;
+}
 body {
     background-color: #ffffff !important;
 }
@@ -15,7 +22,31 @@ section.s-block.container {
     width: 100% !important;
     max-width: 100% !important;
 }
-
+.s-product-card-vertical {
+    padding: 50px !important;
+    flex-direction: column;
+    align-items: center;
+}
+   .s-products-list-vertical-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr));  
+          justify-items: center !important;     
+    }
+@media (min-width: 1024px) {
+    .s-products-list-vertical-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      
+    }
+}
+@media (max-width: 768px) {
+    .s-products-list-vertical-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;       
+    }
+}
+@media (max-width: 640px) {
+    .s-products-list-vertical-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;       
+    }
+}
 </style>
 {% set important_links = theme.settings.get('important_links') %}
 <header class="store-header">
