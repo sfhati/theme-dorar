@@ -1,7 +1,7 @@
 {
     "name": {
         "ar": "درر العود",
-        "en": "Theme Raed"
+        "en": "Dorar"
     },
     "repository": "https://github.com/sfhati/theme-dorar",
     "author_email": "support@salla.sa",
@@ -13,6 +13,7 @@
         "unite-cards-height",
         "component-featured-products",
         "component-fixed-banner",
+        "component-main-banner",
         "component-fixed-products",
         "component-products-slider",
         "component-photos-slider",
