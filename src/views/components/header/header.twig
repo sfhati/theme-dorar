@@ -37,6 +37,22 @@ section.s-block.container {
 .fixed-header .flex.items-stretch.justify-between.relative {
     margin: 0;
 }
+   .navbar-brand img {
+     max-height: unset;
+    /* width: auto; */
+    max-width: 223px;
+}
+i.sicon-menu.text-primary.text-2xl,
+.header-btn__icon.icon:where([dir="rtl"], [dir="rtl"] *),
+.s-cart-summary-total,
+.main-menu li > a {
+    color: #b08046 !important;
+    border-color: #b08046 !important;
+    border: none !important;
+}
+.main-menu li > a:hover {
+    color: #ecbc83;
+}
 @media (min-width: 1024px) {
     .s-products-list-vertical-cards {
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -53,6 +69,9 @@ section.s-block.container {
     .s-products-list-vertical-cards {
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;       
     }
+    .navbar-brand img {
+    max-width: 190px;
+}
     
 }
 .store-header,.main-nav-container.fixed-header .inner{
@@ -85,14 +104,7 @@ height: 166px;
     margin: 0;
     background-size: cover;
     }
-    .navbar-brand img {
-     max-height: unset;
-    /* width: auto; */
-    max-width: 223px;
-}
-.header-btn__icon.icon:where([dir="rtl"], [dir="rtl"] *) {
-    color: #fff;
-}
+ 
 </style>
 
 <header class="store-header greenline">
@@ -121,7 +133,7 @@ height: 166px;
                         <salla-user-menu avatar-only show-header></salla-user-menu>
                       {% else %}
                           <button class="header-btn" aria-label="user-icon" onclick="salla.event.dispatch('login::open')">
-                            <i class="header-btn__icon sicon-user-circle"></i>
+                            <i class="header-btn__icon icon sicon-user"></i>
                           </button>
                       {% endif %}
                        

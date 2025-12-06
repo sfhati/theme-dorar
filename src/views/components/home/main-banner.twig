@@ -8,6 +8,9 @@
 | position    | Int     | Sorting number start from zero                                   |
 #}
 <section class="s-block s-block--main-banner wide-placeholder">
+{% if component.showgreen %}
+<div class="greenline"></div>
+ {% endif %}
     <div class="container3">
          {% if component.title %}
         <div class="s-block__title">
