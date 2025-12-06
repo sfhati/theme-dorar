@@ -325,7 +325,7 @@
                     "icon": "sicon-format-text-alt",
                     "value": null,
                     "multilanguage": false,
-                    "required": false ,
+                    "required": false,
                     "minLength": 6,
                     "maxLength": 30
                 },
@@ -351,6 +351,30 @@
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
                     "value": null,
+                    "required": false
+                },
+                {
+                    "id": "showgreen",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "إظهار الترويسة الخضراء في الأعلى",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": true,
+                    "required": false
+                },
+                {
+                    "id": "dorarline",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "إظهار إطار درر في الأسفل",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": false,
                     "required": false
                 }
             ]
