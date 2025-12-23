@@ -86,8 +86,9 @@ class ProductCard extends HTMLElement {
     let price = '';
     if (this.product.is_on_sale) {
       price = `<div class="s-product-card-sale-price">
-                <h4>${this.getPriceFormat(this.product.sale_price)}</h4>
-                <span>${this.getPriceFormat(this.product?.regular_price)}</span>
+                <h4>${this.getPriceFormat(this.product.sale_price)}
+                <span style="color:red;text-decoration-line: line-through;font-size:14px">${this.getPriceFormat(this.product?.regular_price)}</span></h4>
+               
               </div>`;
     }
     else if (this.product.starting_price) {
@@ -97,7 +98,7 @@ class ProductCard extends HTMLElement {
               </div>`
     }
     else{
-      price = `<h4 class="s-product-card-price">${this.getPriceFormat(this.product?.price)}</h4>`
+      price = `<h2 class="total-price font-bold text-xl inline-block" style="opacity: 1; transform: scale(1);">${this.getPriceFormat(this.product?.price)} <i class="sicon-sar"></i></h2>`
     }
 
     return price;
@@ -230,7 +231,7 @@ class ProductCard extends HTMLElement {
  
           <div class="s-product-card-content-main ${this.isSpecial ? 's-product-card-content-extra-padding' : ''}">
             <h3 class="s-product-card-content-title nnn">
-              <a href="${this.product?.url}">${this.product?.name}</a>
+              <a href="${this.product?.url}">${(this.product?.name || '').split('-').join('<br>')}</a>
             </h3>
 
             ${this.product?.subtitle && !this.minimal ?
