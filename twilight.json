@@ -1,10 +1,10 @@
 {
     "name": {
         "ar": "درر العود",
-        "en": "Dorar"
+        "en": "Theme Raed"
     },
-    "repository": "https://github.com/sfhati/theme-dorar",
-    "author_email": "support@salla.sa",
+    "repository": "https://github.com/alphasky-org/theme-dorar",
+    "author_email": "bassam.alessawi@icloud.com",
     "features": [
         "mega-menu",
         "fonts",
@@ -1108,7 +1108,7 @@
             ]
         }
     ],
-    "support_url": "https://salla.com/",
+    "support_url": "https://alphasky.org/",
     "description": {
         "ar": "مجموعة كبيرة من المزايا لدعم تجارتك وتقديم تجربة تسوق مثيرة لعملائك",
         "en": "A wide range of features to support your business and provide an exciting shopping experience for your customers"
